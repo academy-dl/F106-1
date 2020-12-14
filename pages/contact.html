@@ -5,14 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>F106</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/common.css">
 </head>
 
 <body>
-
-
   <header class="header">
-    <a href="" class="header-logo">
+    <a href="/index.html" class="header-logo" aria-label="Go main page">
       <img src="../image/logo.png" alt="logo">
     </a>
     <nav class="menu-nav">
@@ -34,57 +32,118 @@
     <a href="tel:719-431-9698" class="header-phone">719-431-9698</a>
     <a href="contact.html">Contact Us</a>
   </header>
+  <main>
+    <h1>Contact Us</h1>
 
-  {include 'section'}
-  {include 'section'}
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <input id="name-input" type="text" placeholder="Ivan Ivanov" required>
+      <label for="name-input">Name</label>
+      <label>
+        Phone
+        <input type="text" >
+      </label>
+      <input id="email-input" type="email" >
+      <label for="email-input">E-mail</label>
 
-  {include 'section'}
-  <section class="map">
-    <div class="map-wrapper">
-      <h2 class="map-title">Chem-Dry</h2>
-      <p class="map-desc">9420 Cedar CT, Thornton, CO 80229</p>
-      <a href="tel:720 605-9399" class="map-phone">(720) 605-9399 </a>
-      <a href="" class="button button--purple">Learn More</a>
-    </div>
-  </section>
+      <fieldset class="form-fieldset-wrapper">
+        <legend>Payment Methods</legend>
+        <ul class="payment-list">
+          <li>
+            <input id="check-cash" type="checkbox" class="input" value="Cash" checked>
+            <label for="check-cash" class="checkbox">Cash</label>
+          </li>
+          <li>
+            <input id="check-credit" type="checkbox" class="input" value="Сard">
+            <label for="check-credit" class="checkbox">Сredit Сard</label>
+          </li>
+          <li>
+            <input id="check-receipt" type="checkbox" class="input" value="Receipt">
+            <label for="check-receipt" class="checkbox">Receipt</label>
+          </li>
+        </ul>
+      </fieldset>
 
-  <footer class="footer">
+      <input id="email-input" type="text" placeholder="">
+      <label for="email-input">City of Birth</label>
+
+      <fieldset class="form-fieldset-wrapper">
+        <legend>Do you need a report on the services provided?</legend>
+        <ul class="radio-list">
+            <li>
+                <input id="radio-yes" type="radio" name="report" value="yes" class="radio"
+                    checked>
+                <label for="radio-yes" class="radio-button">Yes</label>
+            </li>
+            <li>
+                <input id="radio-no" type="radio" name="report" value="no" class=" radio">
+                <label for="radio-no" class="radio-button">No</label>
+            </li>
+        </ul>
+    </fieldset>
+
+    <label for="textarea">Message</label>
+    <textarea id="textarea" rows="5" placeholder="add text there"></textarea>
+
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <section class="map">
+      <div class="map-wrapper">
+        <h2 class="map-title">Chem-Dry</h2>
+        <p class="map-desc">9420 Cedar CT, Thornton, CO 80229</p>
+        <a href="tel:720 605-9399" class="map-phone">(720) 605-9399 </a>
+        <a href="" class="button button--purple">Learn More</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" style="background-color: cadetblue;">
     <p class="footer-desc">Subscribe to our social networks</p>
     <ul class="social-links">
-      <li class="social-link">
-        <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
-            fill="white" />
-        </svg>
+      <li class="social-link facebook">
+        <a href="#"><span class="visually-hidden">Follow Us on facebook</span>
+          <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
+              fill="white" />
+          </svg></a>
+
       </li>
-      <li class="social-link">
-        <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
-            fill="white" />
-        </svg>
+      <li class="social-link twitter">
+        <a href="#"><span class="visually-hidden">Follow Us on twitter</span>
+          <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M41.8822 23.78C43.0577 23.0067 44.0372 22.04 44.8209 20.88C43.8413 21.2667 42.6659 21.6533 41.4904 21.8467C42.6659 21.0733 43.6454 20.1067 44.0372 18.7533C42.8618 19.3333 41.6863 19.9133 40.315 20.1067C39.3354 18.9467 37.7681 18.3667 36.005 18.3667C32.8704 18.3667 30.1277 20.88 30.1277 24.1667C30.1277 24.5533 30.1277 25.1333 30.3236 25.52C25.4259 25.3267 21.3118 23.0067 18.3731 19.5267C17.7854 20.3 17.5895 21.2667 17.5895 22.4267C17.5895 24.36 18.569 26.1 20.1363 27.26C19.1568 27.26 18.3731 27.0667 17.5895 26.4867C17.5895 29.1933 19.5486 31.5133 22.2913 32.0933C21.8995 32.2867 21.3118 32.2867 20.724 32.2867C20.3322 32.2867 19.9404 32.2867 19.5486 32.0933C20.3322 34.4133 22.4872 35.96 25.034 36.1533C23.075 37.7 20.5281 38.6667 17.7854 38.6667C17.3936 38.6667 16.8059 38.6667 16.414 38.6667C18.9609 40.2133 22.0954 41.18 25.23 41.18C35.809 41.18 41.6863 32.48 41.6863 24.94C41.8822 24.1667 41.8822 23.9733 41.8822 23.78ZM29.9318 0C46.1922 0 59.3181 12.9533 59.3181 29C59.3181 45.0467 46.1922 58 29.9318 58C13.6713 58 0.54541 45.0467 0.54541 29C0.54541 12.9533 13.6713 0 29.9318 0Z"
+              fill="white" />
+          </svg></a>
+
       </li>
-      <li class="social-link">
-        <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
-            fill="white" />
-        </svg>
+      <li class="social-link google">
+        <a href="#"><span class="visually-hidden">Follow Us on google</span>
+          <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.0727 28.42C11.6808 33.2533 15.0113 38.0867 19.7131 39.8267C24.4149 41.5667 30.2922 40.4067 33.4267 36.3467C35.3858 33.8333 35.7777 30.5467 35.5817 27.4533C35.5817 27.4533 27.9413 27.4533 24.0231 27.4533C24.0231 28.8067 24.0231 30.16 24.0231 31.32C26.374 31.32 28.529 31.32 30.8799 31.32C29.9004 36.1533 23.0436 37.8933 19.3213 34.6067C15.599 31.7067 15.7949 25.7133 19.7131 23.0067C22.4558 20.88 26.374 21.46 29.1167 23.2C30.0963 22.2333 31.2718 21.2667 32.2513 20.1067C29.9004 18.3667 27.1577 17.2067 24.219 17.2067C17.9499 17.2067 12.2686 22.4267 12.0727 28.42ZM45.3772 23.2H41.459C41.459 24.5533 41.459 25.7133 41.459 27.0667C40.0877 27.0667 38.9122 27.0667 37.5408 27.0667V30.9333C38.9122 30.9333 40.0877 30.9333 41.459 30.9333C41.459 32.2867 41.459 33.4467 41.459 34.8H45.3772C45.3772 33.4467 45.3772 32.2867 45.3772 30.9333C46.7486 30.9333 47.924 30.9333 49.2954 30.9333V27.0667C47.924 27.0667 46.7486 27.0667 45.3772 27.0667C45.3772 25.7133 45.3772 24.5533 45.3772 23.2ZM29.7045 0C45.9649 0 59.0908 12.9533 59.0908 29C59.0908 45.0467 45.9649 58 29.7045 58C13.444 58 0.318115 45.0467 0.318115 29C0.318115 12.9533 13.444 0 29.7045 0Z"
+              fill="white" />
+          </svg></a>
+
       </li>
-      <li class="social-link">
-        <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
-            fill="blue" />
-        </svg>
+      <li class="social-link inlink">
+        <a href="#"><span class="visually-hidden">Follow Us on Linkedin</span>
+          <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.094 13.5333C17.1349 13.5333 15.7635 14.6933 15.7635 16.4333C15.7635 18.1733 17.1349 19.3333 19.094 19.3333C21.249 19.3333 22.4245 18.1733 22.4245 16.4333C22.2285 14.6933 21.0531 13.5333 19.094 13.5333ZM16.3513 40.6H21.6408V21.8467H16.3513V40.6ZM36.7258 21.2667C33.5913 21.2667 31.4363 22.8133 30.6526 23.9733L30.2608 22.04H25.559V40.7933H30.8485V29.58C30.8485 29 30.8485 28.42 31.0445 28.2267C31.4363 27.26 32.8076 26.1 34.3749 26.1C36.5299 26.1 37.9013 27.6467 37.9013 30.16V40.9867H43.1908V29.3867C43.1908 23.5867 40.4481 21.2667 36.7258 21.2667ZM0.0908203 29C0.0908203 12.9533 13.2167 0 29.4772 0C45.7376 0 58.8635 12.9533 58.8635 29C58.8635 45.0467 45.7376 58 29.4772 58C13.2167 58 0.0908203 45.0467 0.0908203 29Z"
+              fill="white" />
+          </svg></a>
+
       </li>
-      <li class="social-link">
-        <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z"
-            fill="purple" />
-        </svg>
+      <li class="social-link youtube">
+        <a href="#"><span class="visually-hidden">Follow Us on youtube</span>
+          <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M27.7031 33.2533V23.9733L36.7149 28.6133L27.7031 33.2533ZM47.4899 22.4267C47.4899 22.4267 47.0981 20.1067 46.1185 19.14C44.9431 17.7867 43.3758 17.7867 42.7881 17.7867C38.0863 17.4 31.2294 17.4 31.2294 17.4C31.2294 17.4 24.1767 17.4 19.6708 17.7867C19.0831 17.7867 17.5158 17.7867 16.3403 19.14C15.3608 20.1067 14.969 22.4267 14.969 22.4267C14.969 22.4267 14.5772 25.1333 14.5772 27.6467V30.16C14.5772 32.8667 14.969 35.5733 14.969 35.5733C14.969 35.5733 15.3608 37.8933 16.3403 38.86C17.5158 40.2133 19.279 40.2133 20.0626 40.2133C22.8053 40.4067 31.4253 40.6 31.4253 40.6C31.4253 40.6 38.4781 40.6 42.984 40.2133C43.5717 40.2133 45.139 40.2133 46.3144 38.86C47.294 37.8933 47.6858 35.5733 47.6858 35.5733C47.6858 35.5733 48.0776 32.8667 48.0776 30.16V27.6467C47.6858 25.1333 47.4899 22.4267 47.4899 22.4267ZM0.863525 29C0.863525 12.9533 13.9894 0 30.2499 0C46.5103 0 59.6362 12.9533 59.6362 29C59.6362 45.0467 46.5103 58 30.2499 58C13.9894 58 0.863525 45.0467 0.863525 29Z"
+              fill="white" />
+          </svg>
+        </a>
       </li>
     </ul>
   </footer>
