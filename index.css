@@ -1,0 +1,47 @@
+/* Header */
+.hero-title {
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 90px;
+    color: #00559D;
+}
+
+.hero-btn {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: #95459A;
+}
+
+/* Services */
+.services-title {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #00559D;
+}
+
+.services-item-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2C3036;
+}
+
+/* About us */
+.about-us-title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #005DAB;
+}
+
+.about-us-desc {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+}
+
+

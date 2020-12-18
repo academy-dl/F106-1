@@ -1,3 +1,12 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2C3036;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -9,4 +18,76 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #008752;
+    text-decoration: none;
+}
+
+
+.menu-list .item-link {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;    
+    color: #333333;
+    text-decoration: none;
+}
+
+/* HEADER */
+.header-phone {
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    color: #95459A;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #00559D;
+}
+
+.footer-desc {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 52px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+/* Map */
+
+.map-wrapper {
+    background-color:#008752;
+}
+
+.map-title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;   
+    color: #FFFFFF;
+}
+
+.map-desc {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;  
+    color: #FFFFFF;
+}
+
+.map-phone {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px; 
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.map-btn {
+    background-color: #95459A;
 }

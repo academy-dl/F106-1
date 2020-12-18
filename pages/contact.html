@@ -5,35 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>F106</title>
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/common.css">
+  <link rel="stylesheet" href="/pages/contact.css">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <a href="/index.html" class="header-logo" aria-label="Go main page">
       <img src="../image/logo.png" alt="logo">
     </a>
-    <nav class="menu-nav">
+    <nav class="main-nav">
       <ul class="menu-list">
         <li class="menu-item">
-          <a href="">Catalog</a>
+          <a class="item-link" href="#">Catalog</a>
         </li>
         <li class="menu-item">
-          <a href="">Servises</a>
+          <a href="" class="item-link">Servises</a>
         </li>
         <li class="menu-item">
-          <a href="">Blog</a>
+          <a href="" class="item-link">Blog</a>
         </li>
         <li class="menu-item">
-          <a href="">About us</a>
+          <a href="" class="item-link">About us</a>
         </li>
       </ul>
     </nav>
     <a href="tel:719-431-9698" class="header-phone">719-431-9698</a>
-    <a href="contact.html">Contact Us</a>
+    <a class="btn">Contact Us</a>
   </header>
   <main>
-    <h1>Contact Us</h1>
+    <h1 class="contact-title">Contact Us</h1>
 
     <form action="https://echo.htmlacademy.ru" method="post">
       <input id="name-input" type="text" placeholder="Ivan Ivanov" required>
@@ -93,11 +97,11 @@
         <h2 class="map-title">Chem-Dry</h2>
         <p class="map-desc">9420 Cedar CT, Thornton, CO 80229</p>
         <a href="tel:720 605-9399" class="map-phone">(720) 605-9399 </a>
-        <a href="" class="button button--purple">Learn More</a>
+        <a href="" class="btn map-btn">Learn More</a>
       </div>
     </section>
   </main>
-  <footer class="footer" style="background-color: cadetblue;">
+  <footer class="footer">
     <p class="footer-desc">Subscribe to our social networks</p>
     <ul class="social-links">
       <li class="social-link facebook">
