@@ -1,4 +1,17 @@
-/* Header */
+/* main-top */
+.hero {
+    background-color: #E0E7ED;
+    background-image: url('/image/fon.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-wrapper {
+    padding-top: 143px;
+    padding-bottom: 286px;
+}
+
 .hero-title {
     font-weight: 900;
     font-size: 90px;
@@ -6,30 +19,90 @@
     color: #00559D;
 }
 
+.hero-btn-wrapper {
+    width: 360px;
+}
+
 .hero-btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 50px;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     background-color: #95459A;
+    border: 0;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #D665DD;
+}
+
+.hero-btn:active {
+    background-color: #722A77;
 }
 
 /* Services */
+.services {
+    margin-top: 80px;
+}
+
 .services-title {
     font-weight: bold;
     font-size: 42px;
     line-height: 50px;
     text-transform: uppercase;
+    text-align: center;
     color: #00559D;
 }
 
+.services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+.services-item {
+    width: 280px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
 .services-item-title {
+    margin-top: 20px;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
     color: #2C3036;
 }
 
+.services-item-desc {
+    margin-top: 20px;
+}
+
+.services-btn-wrapper {
+    margin-top: 20px;
+    width: 181px;
+}
+
 /* About us */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 110px;
+}
+
+.about-us-wrapper {
+    width: 480px;
+}
+
 .about-us-title {
     font-weight: 900;
     font-size: 72px;
@@ -38,10 +111,47 @@
 }
 
 .about-us-desc {
+    margin-top: 46px;
     font-weight: normal;
     font-size: 18px;
     line-height: 28px;
     color: #000000;
 }
 
+.about-us-btn-wrapper {
+    margin-top: 20px;
+    width: 181px;
+}
 
+.about-us-img-wrapper {
+    position: relative;
+}
+
+.about-us-img-wrapper::before {
+    content: '';
+    position: absolute;
+    right: -110px;
+    top: 30px;
+    width: 570px;
+    height: 500px;
+    background-color: #008752;
+    z-index: -1;
+}
+
+/* Awards */
+.awards {
+    margin-top: 106px;
+}
+
+.awards-list {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.awards-item:hover {
+    opacity: .5;
+}
+
+.awards-item:active {
+    opacity: .2;
+}

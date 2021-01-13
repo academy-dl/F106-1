@@ -1,7 +1,18 @@
 .contact-title {
+    margin-top: 15px;
     font-weight: 900;
     font-size: 50px;
     line-height: 52px;
     text-align: center;
     color: #00559D;
 }
+
+.conatct-form {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 100px;
+    width: 780px;
+    background-color: #EEEEEE;
+}
+

@@ -5,7 +5,29 @@ body {
     font-size: 16px;
     line-height: 21px;
     color: #2C3036;
+  
 }
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 110px;
+}
+
 
 .visually-hidden {
     position: absolute;
@@ -21,14 +43,85 @@ body {
 }
 
 .btn {
+    display: inline-block;
+    padding: 11px 10px;
+    width: 100%;
+    text-align: center;
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
     background-color: #008752;
     text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
+.btn:hover {
+    background-color: #26CD8B;
+}
+
+.btn:active {
+    background-color: #005232;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 25px;
+}
+
+.header-logo[href]:hover {
+    opacity: 0.7;
+    mix-blend-mode: multiply;
+}
+
+.header-logo[href]:active {
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+}
+
+.header-phone {
+    margin-right: 24px;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    color: #95459A;
+    text-decoration: none;
+}
+
+.header-phone:hover {
+    opacity: .7;
+}
+
+.header-btn-wrapper {
+    width: 181px;
+}
+
+/* навигация */
+.main-nav {
+    margin-right: auto;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 15px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
 
 .menu-list .item-link {
     font-weight: bold;
@@ -38,18 +131,25 @@ body {
     text-decoration: none;
 }
 
-/* HEADER */
-.header-phone {
-    font-weight: 800;
-    font-size: 17px;
-    line-height: 20px;
-    color: #95459A;
-    text-decoration: none;
+.menu-list .item-link:hover {
+    color: #008752;
+}
+
+.menu-list .item-link:active {
+    color: #333333;
 }
 
 /* FOOTER */
 .footer {
+    padding: 50px 0;
     background-color: #00559D;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer-desc {
@@ -60,9 +160,43 @@ body {
     color: #FFFFFF;
 }
 
+.footer .social-links {
+    display: flex;
+}
+
+.footer .social-link {
+    margin-left: 16px;
+}
+
+.social-link a {
+    display: block;
+}
+
+.social-link a:hover path {
+  fill: #60A7E3;
+}
+.social-link a:active path {
+  fill: #17354F;
+}
+
 /* Map */
+.map {
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 133px;
+    background-color: #eeeeee;
+    background-image: url('/image/section-map.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .map-wrapper {
+    padding-top: 50px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 26px;
+    width: 380px;
     background-color:#008752;
 }
 
@@ -74,6 +208,7 @@ body {
 }
 
 .map-desc {
+    margin-top: 17px;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;  
@@ -81,6 +216,9 @@ body {
 }
 
 .map-phone {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 17px;
     font-weight: bold;
     font-size: 15px;
     line-height: 18px; 
@@ -88,6 +226,186 @@ body {
     text-decoration: none;
 }
 
+.map-btn-wrapper {
+    width: 181px;
+    margin-top: 20px;
+}
+
 .map-btn {
     background-color: #95459A;
+}
+
+.map-btn:hover {
+    background-color: #D665DD;
+}
+
+.map-btn:active {
+    background-color: #722A77;
+}
+
+/* CONTACT FORM && CONATCT POPUP */
+
+.popup-form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 100px;
+    width: 780px;
+    background-color: #EEEEEE;
+}
+
+.field {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.field-gap {
+    margin-top: 20px;
+}
+
+.label {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6B6A6A;
+    margin-bottom: 6px;
+}
+
+.field input {
+    padding: 0 20px;
+    height: 50px;
+    background-color: #EEEEEE;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.field input:focus,
+.field input:hover {
+    border: 2px solid rgba(255, 182, 18, 0.5);
+    outline: 0;
+}
+
+.field input:focus + .label,
+.field input:hover + .label {
+    color: rgba(255, 182, 18, 0.5);
+}
+
+.field textarea {
+    padding: 12px 20px;
+    background-color: #EEEEEE;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.form-top-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-top-wrapper .field {
+    width: 280px;
+}
+
+.form-top-wrapper .field:first-child {
+   margin-right: 20px;
+}
+
+.form-fieldset-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+}
+
+.payment-list {
+    display: flex;
+    margin-top: 14px;
+}
+
+.checkbox-label {
+    position: relative;
+    margin-right: 33px;
+    padding-left: 28px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6B6A6A;
+}
+
+.checkbox-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 21px;
+    height: 21px;
+    background-color: #EEEEEE;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.checkbox-label::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: #95459A;
+    opacity: 0;
+}
+
+.checkbox-input:checked + .checkbox-label::after {
+    opacity: 1;
+}
+
+.checkbox-input:disabled + .checkbox-label {
+    opacity: .5;
+}
+
+.radio-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.radio-list__item {
+    margin-right: 33px;
+}
+
+.radio-button-label {
+    position: relative;
+    padding-left: 28px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6B6A6A;
+}
+
+.radio-button-label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.radio-button-label::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: #95459A;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.radio-input:checked + .radio-button-label::after {
+    opacity: 1;
+}
+
+.form-btn-wrapper {
+    margin-top: 20px;
+    width: 181px;
 }
