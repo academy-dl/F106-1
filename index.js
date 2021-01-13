@@ -19,7 +19,7 @@ window.addEventListener('keydown', function(evt) {
     if (evt.code === "Escape") {
         if(popup.classList.contains('popup-contact-open')) {
             popup.classList.remove('popup-contact-open');
-            overlay.classList.remove('show');рпарапра
+            overlay.classList.remove('show');
         } 
     } 
 })
