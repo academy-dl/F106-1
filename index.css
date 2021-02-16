@@ -8,25 +8,27 @@
 }
 
 .hero-wrapper {
-    padding-top: 143px;
+    padding-top: 148px;
     padding-bottom: 286px;
 }
 
 .hero-title {
+    max-width: 850px;
     font-weight: 900;
     font-size: 90px;
     line-height: 90px;
     color: #00559D;
+    letter-spacing: -1px;
 }
 
 .hero-btn-wrapper {
+    margin-top: 41px;
     width: 360px;
 }
 
 .hero-btn {
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-top: 50px;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -75,7 +77,7 @@
 }
 
 .services-item-title {
-    margin-top: 20px;
+    margin-top: 16px;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
@@ -100,6 +102,7 @@
 }
 
 .about-us-wrapper {
+    padding-top: 8px;
     width: 480px;
 }
 
@@ -111,7 +114,7 @@
 }
 
 .about-us-desc {
-    margin-top: 46px;
+    margin-top: 35px;
     font-weight: normal;
     font-size: 18px;
     line-height: 28px;

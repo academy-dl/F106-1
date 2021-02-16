@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -9,7 +16,8 @@ body {
 }
 
 *, *::after, *::before {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 ul {
@@ -37,7 +45,8 @@ h1, h2, h3, p {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -55,6 +64,8 @@ h1, h2, h3, p {
     text-decoration: none;
     text-transform: uppercase;
     border: none;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 }
 
@@ -68,11 +79,18 @@ h1, h2, h3, p {
 
 /* HEADER */
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-top: 33px;
     padding-bottom: 33px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header-logo {
@@ -112,6 +130,8 @@ h1, h2, h3, p {
 }
 
 .menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -146,10 +166,19 @@ h1, h2, h3, p {
 }
 
 .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .footer-desc {
@@ -161,11 +190,13 @@ h1, h2, h3, p {
 }
 
 .footer .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .footer .social-link {
-    margin-left: 16px;
+    margin-left: 1px;
 }
 
 .social-link a {
@@ -218,7 +249,7 @@ h1, h2, h3, p {
 .map-phone {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 17px;
+    margin-top: 24px;
     font-weight: bold;
     font-size: 15px;
     line-height: 18px; 
@@ -228,7 +259,7 @@ h1, h2, h3, p {
 
 .map-btn-wrapper {
     width: 181px;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 
 .map-btn {
@@ -294,8 +325,13 @@ h1, h2, h3, p {
 }
 
 .field {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 }
 
 .field-gap {
@@ -335,6 +371,8 @@ h1, h2, h3, p {
 }
 
 .form-top-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 20px;
 }
@@ -355,6 +393,8 @@ h1, h2, h3, p {
 }
 
 .payment-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 14px;
 }
@@ -400,6 +440,8 @@ h1, h2, h3, p {
 }
 
 .radio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 20px;
 }
